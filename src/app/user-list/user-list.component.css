@@ -1,0 +1,23 @@
+ table {
+     border: 1;
+ }
+ 
+ h1 {
+     text-align: center;
+ }
+ 
+ .demo-button+.demo-button {
+     margin-left: 8px;
+ }
+ 
+ .demo-button-container {
+     padding-bottom: 16px;
+ }
+ 
+ .table table-hover {
+     opacity: 0.5;
+ }
+ 
+ .card {
+     opacity: 0.7;
+ }

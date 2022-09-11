@@ -1,0 +1,34 @@
+<div class="card">
+
+
+
+    <div class="container">
+
+        <form (ngSubmit)="OnSubmit()">
+            <!-- <div class="form-group">
+                <label>Matrecule </label>
+                <input type="text" class="form-control" id="Matrecule" [(ngModel)]="user.matrecule" name="matrecule">
+            </div> -->
+            <div class="form-group">
+                <label>userName  </label>
+                <input type="text" class="form-control" id="userName" [(ngModel)]="user.userName" name="userName">
+            </div>
+            <div class="form-group">
+                <label>First Name </label>
+                <input type="text" class="form-control" id="userFirstName" [(ngModel)]="user.userFirstName" name="userFirstName">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">User Lastname </label>
+                <input type="email" class="form-control" id="userLastName" [(ngModel)]="user.userLastName" name="emails">
+            </div>
+
+            <div class="form-group">
+                <label>Password </label>
+                <input type="text" class="form-control" id="userPassword" [(ngModel)]="user.userPassword" name="userPassword">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Save User</button>
+        </form>
+    </div>
+</div>

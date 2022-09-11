@@ -1,0 +1,62 @@
+<div class="card w-200">
+    <div class="card-body">
+        <p class="fw-bold"> Program Name : </p>{{ProgramFromList.prog}}
+        <p class="fw-bold"> Date début : </p>{{ProgramFromList.datd}}
+        <p class="fw-bold"> Heure début : </p>{{ProgramFromList.heurd}}
+        <p class="fw-bold"> Heure Fin : </p>{{ProgramFromList.heurf}}
+        <p class="fw-bold"> Durée d'exécution : </p>{{ProgramFromList.duree}}
+        <button (click)="getPrograme()" (click)="getname()" (click)="getDate()">{{ProgramFromList.prog}}</button>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            const labels = [
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+            ];
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45],
+                }]
+            };
+            const config = {
+                type: 'line',
+                data: data,
+                options: {}
+            };
+        </script>
+        <script>
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        </script>
+
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div style="display: block;">
+
+    </div>
+</div>

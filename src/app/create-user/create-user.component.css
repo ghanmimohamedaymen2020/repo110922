@@ -1,0 +1,16 @@
+/* .card {
+    opacity: 0.8;
+    background-color: #ffffff;
+    color: hwb(0 0% 100%);
+} */
+
+.example-card {
+    opacity: 0.92;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}

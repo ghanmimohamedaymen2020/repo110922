@@ -1,0 +1,70 @@
+<div>
+    <div *ngIf="_ficheIntervention" class="card w-200" id="print-section">
+
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col col-md-4"> <img src="/assets/logo.gif" style="width: 50%;"> </div>
+                <div class="col col-md-4">
+                    <h1 style="text-align: center;"><b>Fiche Intervention</b> </h1>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row">
+                <div class="col col-md-4">
+                    <p><b> Composant impacté:</b>{{_ficheIntervention.Composantimpacte}}</p>
+                    <p><b>Domaine:</b> {{_ficheIntervention.domaine}} </p>
+                    <p><b>Nom du demandeur:</b> {{_ficheIntervention.nomDemandeur}}</p>
+                    <p><b>Date De Réclamation:</b> {{_ficheIntervention.dateReclamation}}</p>
+                </div>
+                <div class="col col-md-2">
+                </div>
+                <div class="col col-md-6">
+                    <p><b>Document:</b> {{_ficheIntervention.document}}</p>
+                    <p><b>Objet:</b> {{_ficheIntervention.object}}</p>
+                    <p><b>Date Modification:</b> {{_ficheIntervention.dateModification}}</p>
+                    <p><b>Revision:</b> {{_ficheIntervention.revision}}</p>
+                    <p><b>Statut résolution</b> {{_ficheIntervention.statutResolution}}</p>
+                </div>
+            </div>
+
+            <div>
+
+
+            </div>
+            <p><b> Constats :</b>{{_ficheIntervention.constats}}</p>
+
+
+            <p><b> Détail investigations  :</b> {{_ficheIntervention.detailInvestigations}}</p>
+
+            <p><b>  Cause de l’Incident :</b> {{_ficheIntervention.causeIncident}}</p>
+
+            <p><b>  Conséquences de l’incident :</b> {{_ficheIntervention.consequencesIncident}}</p>
+
+            <p><b>  Durée de l’incident :</b> {{_ficheIntervention.dureeIncident}}</p>
+
+            <div>
+                <div>
+                    <pre><b> Actions réalisées  :</b> {{_ficheIntervention.actionsRealisees}}</pre>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-md-2">
+            </div>
+            <div class="col col-md-3">
+            </div>
+            <div class="col col-md-5">
+                <pre> <b>Nom des intervenants :</b> {{_ficheIntervention.nomIntervenants}}</pre>
+            </div>
+        </div>
+    </div>
+    <button *ngIf="_ficheIntervention" [useExistingCss]="true" printSectionId="print-section" ngxPrint>save PDF</button>
+
+</div>
